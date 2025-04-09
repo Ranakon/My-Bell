@@ -10,7 +10,7 @@ import loveQuotes from './loveQuotes';
 function LoveNote() {
   const messages = useMemo(() =>loveQuotes, []);
 
-  const [index, setIndex] = useState(0);
+  const [index, setIndex] = useState(() => Math.floor(Math.random() * messages.length));
   const [text, setText] = useState('');
   const [charIndex, setCharIndex] = useState(0);
   const [isPressed, setIsPressed] = useState(false);
@@ -28,8 +28,12 @@ function LoveNote() {
   }, [charIndex, index, messages]);
 
   const handleClick = () => {
-    const next = (index + 1) % messages.length;
-    setIndex(next);
+    let randomIndex;
+  do {
+    randomIndex = Math.floor(Math.random() * messages.length);
+  } while (randomIndex === index); // ensures it's not the same as before
+
+  setIndex(randomIndex);
     setText('');
     setCharIndex(0);
   };
