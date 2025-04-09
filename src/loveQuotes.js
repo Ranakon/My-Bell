@@ -1,0 +1,35 @@
+const loveQuotes = [
+    "My soul found yours before time even began 🌙",
+    "If I had to cross oceans like Paris for Helen, I’d do it barefoot with your name on my lips 💘",
+    "You are the flame to my destiny, burning like Dido’s last vow 🔥",
+    "I would drink poison like Romeo, if only to kiss you in another life 💋",
+    "Like Juliet, I’d choose your love even if the stars wrote a different fate ✨",
+    "If your heart were Troy, I’d start a thousand wars just to reach you ⚔️",
+    "I’d follow your shadow into the underworld, just like Orpheus did for Eurydice 🎶",
+    "You are the arrow in my heart, shot by a love I never saw coming 💘",
+    "Even the gods would envy what I feel for you, my forbidden heaven 💫",
+    "Like Aeneas carried his past, I carry your love through storms and fire 🌪️🔥",
+    "Your name is carved deeper in my heart than Helen's was in history 💞",
+    "If loving you meant falling like Icarus, I’d burn for the beauty of it 🕊️",
+    "When you speak, time stills — as if even the universe holds its breath 💭",
+    "Like Juliet’s balcony, I’d wait every night for your whispered love 🌹",
+    "Not even the Fates could unweave the thread that binds me to you 🧵💖",
+    "You’re the echo in my silence, the name I speak when no one hears 💓",
+    "To love you is to live through poetry written in kisses and glances 💌",
+    "Even Aphrodite would bow to the love I feel for you 😍",
+    "You are the moonlight that found me lost and lit my soul 🌕",
+    "One lifetime isn’t enough, I want a hundred to love you completely 💍",
+    "Your voice is the spell that softens every war inside me 🫀",
+    "If my heart were a kingdom, you’d wear the crown of every beat 👑",
+    "I dream of you like sailors dream of land — with longing and faith ⛵",
+    "You are the calm after every storm and the storm that stirs my heart 🌊",
+    "Like Cleopatra’s gaze, your eyes conquer my will every time 💫",
+    "You make my heart ache the way great art makes you cry — beautiful and haunting 🎨",
+    "Our love is the kind that myths are born from and legends remember 💘",
+    "I’d write our story on the stars so eternity knows your name ✍️✨",
+    "You’re the sunrise I waited lifetimes to see 🌅",
+    "No spell, no fate, no god — only you could tame my soul 🔮"
+  ];
+  
+  export default loveQuotes;
+  
