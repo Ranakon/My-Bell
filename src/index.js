@@ -3,7 +3,6 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import * as serviceWorkerRegistration from './serviceWorkerRegistration';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -12,8 +11,19 @@ root.render(
   </React.StrictMode>
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
+// Offline service worker magic 🪄💘
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', () => {
+    navigator.serviceWorker
+      .register('/customServiceWorker.js') // this file should be in the public folder!
+      .then(reg => {
+        console.log('[😍SW] Custom service worker registered!', reg);
+      })
+      .catch(err => {
+        console.error('[😭SW] Error registering service worker:', err);
+      });
+  });
+}
+
+// Optional: track performance, baby 🧠
 reportWebVitals();
-serviceWorkerRegistration.register();
